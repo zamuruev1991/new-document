@@ -1,0 +1,204 @@
+html {
+  box-sizing: border-box;
+  font-family: "TT Lakes", sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.header__menu {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* кнопки верхнего меню  */
+.button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: none;
+  margin: 0 10px;
+}
+
+.icons__item {
+  list-style-type: none;
+}
+.ul-items {
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Скрыл кнопки верхнего меню для 320px */
+.header__icons {
+  display: none;
+}
+
+.main__content {
+  background: #f8f8f8;
+}
+
+.header__repair::before {
+  content: "";
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  margin-right: 10px;
+}
+
+/* заголовок Услуги и сервисы */
+.section__h1 {
+  font-family: "TT Lakes", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 24px;
+  letter-spacing: -0.6px;
+}
+
+.section__h1::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 40px;
+  margin-right: 12px;
+  background-color: #41f6d7;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ссылки списка */
+.nav-bar__link {
+  text-decoration: none;
+  color: #7e7e82;
+  white-space: nowrap;
+}
+
+/* список ul */
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px;
+  margin: 4px 16px;
+  overflow-x: auto;
+}
+/* список li */
+.nav-bar__item {
+  margin-right: 10px;
+  padding: 10px 15px;
+  letter-spacing: -0.2px;
+}
+/* рамка при нажатии */
+.nav-bar__item:hover {
+  background-color: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+/* расположение флекс в колонку */
+.section__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__content--text {
+  margin: 0 16px;
+}
+.content--text--p {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+/* скрыл второй абзац для 320px */
+.p2 {
+  display: none;
+}
+
+.show-more {
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 16px;
+}
+.read-more--span {
+  margin-left: 16px;
+  padding: 5px 0;
+}
+
+@media (min-width: 769px) {
+  .header__icons {
+    display: contents;
+  }
+
+  .section__h1 {
+    margin-left: 0px;
+  }
+  .section__h1::before {
+    content: "";
+    margin-right: 24px;
+  }
+  .nav-bar {
+    margin: 8px 28px;
+  }
+  .section__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 28px;
+  }
+  .section__content--text {
+    width: 50%;
+    margin: 0;
+    margin-right: 15px;
+  }
+  .content--text--p {
+    margin: 0;
+  }
+  .p2 {
+    padding-top: 20px;
+    display: contents;
+  }
+  .text__button {
+    margin-top: 20px;
+  }
+  .picture-cps {
+    border-radius: 6px;
+    width: 50%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .nav-bar {
+    flex-wrap: wrap;
+  }
+}
