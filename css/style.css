@@ -152,7 +152,10 @@ body {
   margin-left: 16px;
   padding: 5px 0;
 }
-
+.picture-cps {
+  width: 100%;
+  height: auto;
+}
 @media (min-width: 769px) {
   .header__icons {
     display: contents;
