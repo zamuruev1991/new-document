@@ -272,11 +272,26 @@ body {
   }
 }
 
-@media (min-width: 1120px) {
+.h1-desctop {
+  display: none;
+}
+@media (min-width: 1120px) /* убираем хедер */ {
   .header__menu {
     display: none;
   }
   .nav-bar {
     flex-wrap: wrap;
+  }
+
+  /* убираем стандартный h1 */
+  .desctop-none {
+    display: none;
+  }
+
+  /* h1 для десктоп */
+  .h1-desctop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
