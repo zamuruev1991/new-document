@@ -128,12 +128,6 @@ body {
   letter-spacing: -0.6px;
 }
 
-/* .h1-desctop {
-  display: flex;
-  align-items: center;
-  display: none;
-} */
-
 .section__h1::before {
   content: "";
   display: inline-block;
@@ -144,11 +138,14 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-/* ссылки списка */
 .nav-bar__link {
   font-weight: 500;
+  line-height: 24px;
+  display: block;
   text-decoration: none;
   color: #7e7e82;
+  padding: 6px 15px;
+  border-radius: 6px;
   white-space: nowrap;
 }
 
@@ -163,9 +160,8 @@ body {
 }
 /* список li */
 .nav-bar__item {
-  margin-right: 10px;
-  padding: 10px 15px;
   letter-spacing: -0.2px;
+  border: 2px solid transparent;
 }
 /* рамка при нажатии */
 .nav-bar__item:hover {
